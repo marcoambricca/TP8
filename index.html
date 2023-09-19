@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/utils.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="nombres"></p>
+    <p id="reemplazo"></p>
+    <p id="ej9"></p>
+    <p id="ej10"></p>
+    <p id="ej11"></p>
+    <script>
+        
+        CalcularEdad("2006-10-03");
+        const frutas = ["banana", "manzana", "pera", "frutilla", "anana", "mango", "ciruela", "limon", "melon", "sandia"] 
+        const fruta = prompt("que fruta");
+        HayFruta(frutas,fruta);
+        const ciudad = new Object();
+        ciudad.nombre = "yuco";
+        ciudad.fechaFundacion = "2006-09-29"
+        ciudad.poblacion = 45000;
+        ciudad.extension = 200000;
+
+        for(const elemento in ciudad){
+            console.log(`${elemento} : ${ciudad[elemento]}`)
+        }
+        
+        const numeros = [1,2,3,4,5,6];
+        Doblar(numeros);
+
+        Triangulos();
+
+        const nombres = prompt("ingrese nombres separados por ,");
+        NombresConA(nombres, "nombres");
+
+        const cadena = prompt("ingrese una cadena");
+        const palabra = prompt("ingrese la palabra que quiere reemlazar");
+        const reemplazo = prompt("ingrese por la palabra que quiere reemplazar");
+
+        Reemplazo(cadena, palabra, reemplazo, "reemplazo");
+        cortarTexto();
+
+        const porComa = prompt("ingrese palabras separadas por coma");
+        ComaPorGuion(porComa);
+
+        const cadenapedido = prompt("ingrese los pedidos separados por coma");
+        montoTotal(cadenapedido);
+    </script>
+    
+</body>
+</html>
